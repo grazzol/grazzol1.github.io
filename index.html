@@ -1,0 +1,80 @@
+<!DOCTYPE html>    
+<html lang=fr>	
+  <head>
+    <title>Pour ma Femme</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    <script>
+      function maTete() {
+        document.getElementById("matete").src='Images/me2.jpg';
+        setTimeout(maTeteOFF, 10000);
+      }
+      function maTeteOFF() {
+        document.getElementById("matete").src='';
+      }
+
+    </script>
+    <style>
+       body {
+          background-image: url('Images/1293302.jpg');
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          color: black;
+      }
+
+      .css-nav-li {
+          background-color: whitesmoke;
+      }
+
+      .container-pres {
+          margin: 10vh;
+          background-color:  black;
+          border: 1px solid black;
+          border-radius: 10px;
+      }
+    </style>   
+  </head>
+  <body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs bg-dark" id="myTab" role="tablist">
+      <li class="nav-item css-nav-li" role="presentation">
+        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Accueil</button>
+      </li>
+      <li class="nav-item css-nav-li" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Les amoureux</button>
+      </li>
+      <li class="nav-item css-nav-li" role="presentation">
+        <button class="nav-link " id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Espace Libre</button>
+      </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+        <div class="container-pres">
+          <h1 class="text-light text-center"> Voici le site web du couple Débora et Aurian !</h1>
+
+          <p class="text-light text-center">C'est un site que j'ai créé car je m'ennuyais et que j'aime bien faire plaisir a ma femme.</p>
+
+          <a class="btn btn-danger" role="button" onclick="maTete()" style="margin: 50px;">Try me !</a>
+
+          <img id="matete" src="" style="width:100px; border-radius: 20px ;" >
+
+
+
+        </div>
+      </div>
+      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+        
+
+      </div>
+      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+
+
+      </div>
+    </div>
+
+  </body>
+</html>
